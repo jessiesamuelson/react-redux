@@ -1,0 +1,10 @@
+- why redux:
+one store
+reduced boilerplate
+isomorphic/universal friendly
+immutable store
+hot reloading
+time-travel debugging
+small
+
+react-slingshot
