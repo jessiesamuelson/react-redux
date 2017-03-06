@@ -8,3 +8,48 @@ time-travel debugging
 small
 
 react-slingshot
+
+React classes in es6:
+no autobind
+proptypes are declared separately
+default props declared separately
+set initial state in constructor
+
+React stateless component in es6:
+const HelloWorld = () => {
+  ...
+}
+
+benefits of stateless:
+no class needed
+avoid 'this' keyword
+enforced best practices
+high signal-to-noise
+enhanced code completion/intellisense
+bloated components are obvious
+easier to understand
+
+use stateless components whenever possible
+
+use class components when you need:
+local state
+refs
+lifecycle hooks
+child functions (for performance)
+
+use stateless components everywhere else
+
+Container vs presentation components:
+
+container:
+little to no markup
+pass data actions down
+know about redux
+often stateful
+
+presentation:
+nearly all markup
+don't contain much markup
+receive data and actions via props
+doesn't know about redux
+typically functional components
