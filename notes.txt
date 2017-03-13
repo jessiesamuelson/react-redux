@@ -267,11 +267,39 @@ function mapDispatchToProps(dispatch) {
 
 React doesn't autobind in es6
 
+5 major pieces of a container component
+- constructor, initialize state, bind functions
+- child functions
+- render function
+- proptypes for validation
+- redux connect and related functions
 
+Async in redux
+we'll use a mock API
+start before the API exists
+independence
+backup plan
+ultra-fast
+tests slowness
+aids testing
+point to the real API later
 
+Redux Async Libraries
+- redux-thunk
+- redux-promise
+- redux-saga
 
+Thunk vs. Sagas
 
+Thunks:
+functions
+clunky to test
+easy to learn
 
+Sagas:
+generators
+easy to test
+hard to learn
 
 
 

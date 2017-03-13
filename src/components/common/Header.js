@@ -14,4 +14,8 @@ const Header = ({loading}) => {
   );
 };
 
+Header.propTypes = {
+  loading: PropTypes.object.isRequired
+};
+
 export default Header;

@@ -1,7 +1,18 @@
-// Actions creator
-export function createCourse(course) {
-  // Action
-  // return { type: 'CREATE_COURSE', course: course }
-  // this is equivalent to the above because in es6 if righthand matches lefthand you don't need it
-  return { type: 'CREATE_COURSE', course };
+import * as types from './actionTypes';
+import courseApi from '../api/mockCourseApi';
+
+export function loadCoursesSuccess(courses) {
+  return { type: types.LOAD_COURSES_SUCCESS, courses };
+}
+
+
+export function loadCourses() {
+  return function(dispatch) {
+    // This is where you would do an ajax call
+    return courseApi.getAllCourses().then(courses => {
+      dispatch(loadCoursesSuccess(courses));
+    }).catch(error => {
+      throw(error);
+    });
+  };
 }
