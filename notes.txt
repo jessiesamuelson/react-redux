@@ -301,6 +301,8 @@ generators
 easy to test
 hard to learn
 
+Add a new slice of state:
+create new action file, reducer file, and update root reducer, root index file for dispatcher
 
 
 
